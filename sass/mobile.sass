@@ -1,15 +1,4 @@
-$blueOne: #1F3F68
-$blueTwo: #316099
-$blueThree: #356EAD
-$blueFour: #5A98D0
-$blueFive: #98C3E8
-$white: #ffffff
-$ls: 0.05em
-
-@import '../sass/mobile.sass'
-@import '../sass/desctop.sass'
-
-@media (min-width: 1200px) 
+@media (max-width: 767.9px) 
     *
         margin: 0
         padding: 0
@@ -17,9 +6,10 @@ $ls: 0.05em
 
     body
         position: relative
+        overflow-x: hidden
 
     .content
-        width: 940px
+        width: 90%
         margin: 0 auto
 
     a
@@ -30,7 +20,7 @@ $ls: 0.05em
         background: linear-gradient(0deg, rgba(152,195,232,.2) 8.84%, rgba(152, 195, 232, 0) 31.12%)
 
     .menu_content
-        width: 1140px
+        width: 80%
         margin: 0 auto
         margin-top: 48px
         display: flex
@@ -55,6 +45,7 @@ $ls: 0.05em
 
     .header_content
         display: flex
+        padding-bottom: 150px
 
     .header_title
         display: flex
@@ -64,15 +55,20 @@ $ls: 0.05em
         color: $blueOne
         margin: 110px 0 32px 0
         font-size: 55px
-        width: 510px
+        width: 90% 
         font-family: 'Gelasio', serif
+        text-align: center
 
     .header_description
         color: $blueOne
         line-height: 26px
         letter-spacing: $ls
-        width: 425px
+        width: 90%
+        text-align: center
         margin-bottom: 71px
+
+        img
+            display: none
 
     .main_button
         text-transform: capitalize
@@ -82,23 +78,29 @@ $ls: 0.05em
         display: flex
         justify-content: center
         align-items: center
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
         border-radius: 10px
         margin-bottom: 190px
         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+
+    .team_buttom_class
+        position: relative
 
     .header_images
         margin-left: -80px
 
 
     .help
-        padding-top: 192px
-        height: 1300px
+        padding-top: 70px
 
     .help_title
         font-size: 36px
         color: $blueTwo
-        width: 358px
+        text-align: center
         letter-spacing: $ls
+        margin-bottom: 50px
 
     .blocks_help
         position: relative
@@ -109,6 +111,7 @@ $ls: 0.05em
         padding: 48px
         box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
         border-radius: 10px
+        margin-bottom: 30px
 
         a
             color: $blueFour
@@ -125,43 +128,31 @@ $ls: 0.05em
         img
             margin-bottom: 56px
 
-    .card_one
-        position: absolute
-        top: 140px
-        left: 110px
-
     .card_title
-        width: 257px
         color: $blueOne
         font-size: 20px
         line-height: 30px
         letter-spacing: $ls
         margin-bottom: 16px
+        text-align: center
 
     .card_description
-        width: 284px
         color: $blueOne
         font-size: 16px
         letter-spacing: $ls
         opacity: 0.6
         margin-bottom: 32px
+        text-align: center
 
     .card_two
-        position: absolute
-        top: -130px
-        left: 570px
 
         img
             margin-top: -72px
 
-    .card_three
-        position: absolute
-        top: 440px
-        left: 570px
 
     .client
         background-color: $blueFour
-        border-radius: 200px 0px 0px 0px
+        border-radius: 100px 0px 0px 0px
         padding-top: 96px
 
     .client_header
@@ -174,7 +165,7 @@ $ls: 0.05em
         letter-spacing: $ls
         width: 223px
         color: $white
-        margin-right: 97px
+        margin-right: 30px
 
     .client_description
         line-height: 26px
@@ -190,21 +181,24 @@ $ls: 0.05em
 
     .line_table
         display: flex
+        max-width: 80%
+        margin: 0 auto
 
-    .top_line
-        border-bottom: 1px solid $white
+    .down_line
+        border-top: 1px solid $white
 
     .client_blocks
         height: 128px
-        width: 235px
+        width: 21vw
         border-right: 1px solid $white
         display: flex
         justify-content: center
         align-items: center
         text-transform: uppercase
+        text-align: center
 
     .client_blocks:last-child
-        border-right: none
+        border-right: rgba(0,0,0,1)
 
     .more_client
         background-color: rgba(31,63,104,.2)
@@ -213,38 +207,38 @@ $ls: 0.05em
         width: 90%
         margin-left: -10%
         background-color: $blueTwo
-        border-radius: 0px 200px 0px 0px
+        border-radius: 0px 100px 0px 0px
         padding-top: 91px
         padding-left: 120%
         transform: translate(-50%)
         position: relative
 
     .team_header
-        display: flex
+        display: flex   
+        flex-direction: column
 
     .team_title
         color: $white
         font-size: 36px
         letter-spacing: $ls
         line-height: 46px
-        width: 317px
         padding-bottom: 32px
 
     .team_description
         line-height: 26px
-        width: 460px
         letter-spacing: $ls
         color: $white
         opacity: 0.6
 
     .team_button
         width: 100%
-        padding: 100px 0 0 150px
+        margin-top: 30px
+        height: 100px
 
     hr
         position: absolute
         left: 0
-        width: 90%
+        width: 95%
         color: $white
         opacity: 0.4
 
@@ -254,6 +248,7 @@ $ls: 0.05em
 
         .content
             display: flex
+            flex-wrap: wrap
 
     .contacts
         margin-right: 112px
@@ -269,11 +264,12 @@ $ls: 0.05em
         font-size: 28px
         line-height: 46px
         letter-spacing: 0.02em
+        margin-bottom: 30px
 
     .contact_main
         display: flex
         align-items: center
-        margin-bottom: 24px
+        margin-bottom: 10px
 
     .list
         line-height: 26px
@@ -284,19 +280,19 @@ $ls: 0.05em
         letter-spacing: $ls
 
     .copyright
-        margin-top: 64px
+        margin-top: 20px
         color: $white
         opacity: 0.4
         letter-spacing: $ls
-        margin-bottom: 64px
+        margin-bottom: 30px
 
     .about_us
-        margin-right: 77px
+        margin-right: 20px
 
     .footer_menu
         display: flex
         flex-direction: column
-        margin-top: 30px
+        margin-top: 10px
 
         a
             letter-spacing: $ls
@@ -331,6 +327,3 @@ $ls: 0.05em
 
     .hide
         display: none
-
-
-
