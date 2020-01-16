@@ -90,7 +90,7 @@
                         <div class="team_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                     </div>
                     <div class="team_button">
-                        <a href="#"><div class="main_button team_buttom_class">Let's Talk</div></a>
+                        <a href="#" class="show-modal"><div class="main_button team_buttom_class">Let's Talk</div></a>
                     </div>
                 </div>
             </div>
@@ -138,9 +138,26 @@
             </footer>
         </div>
     </section>
+
     <div class="main_menu_header hide">
         <a href="index.html">Home</a>
         <a href="contact-us.html">Contact us</a>
+    </div>
+
+    <div class="modal_form hide">
+        <div class="form">
+            <div class="message">Send us message</div>
+            <form action="#">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" placeholder="Your Meassage"></textarea>
+
+                <a href="#">Submit</a>
+            </form>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
