@@ -65,7 +65,7 @@
             </div>
             <div class="form">
                 <div class="message">Send us message</div>
-                <form name="test" method="get" action="api.php">
+                <form name="test" method="post" action="form.php">
                     <label for="name">Full Name</label>
                     <input type="text" name="title" value="" placeholder="Your name" required>
                     <label for="email">Email</label>
@@ -147,7 +147,7 @@
         <div class="form">
             <div class="close-modal"><i class="fas fa-times"></i></div>
             <div class="message">Send us message</div>
-            <form action="#">
+            <form method="POST" action="form.php">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Your name" required>
                 <label for="email">Email</label>
@@ -157,6 +157,12 @@
 
                 <a href="#" class="submit">Submit</a>
             </form>
+        </div>
+    </div>
+
+    <div class="sent hide">
+        <div class="send_message">
+            Thanks. Your message has been sent.
         </div>
     </div>
 

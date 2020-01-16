@@ -7,7 +7,9 @@ $(document).ready(function() {
 
         showModal = $('.modal_form'),
 
-        closeNodal = $('.close-modal');
+        closeNodal = $('.close-modal'),
+
+        sent = $('.sent');
 
 
     bar.click(function() {
@@ -42,6 +44,26 @@ $(document).ready(function() {
         showModal.addClass('hide');
 
         $("html,body").css("overflow","");
+
+    });
+
+    $('form').submit(function(e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            url: '/form.php',
+            dataType: 'html',
+            success: function() {
+                sent.removeClass('hide');
+                $('html').css('overflow', 'hidden');
+                $('body').click(function() {
+                    sent.addClass('hide');
+                    $('html').css('overflow', '');
+                    showModal.addClass('hide');
+                })
+            }
+          });
 
     });
 

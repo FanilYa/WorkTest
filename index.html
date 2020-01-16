@@ -166,7 +166,7 @@
         <div class="form">
             <div class="close-modal"><i class="fas fa-times"></i></div>
             <div class="message">Send us message</div>
-            <form action="#">
+            <form method="POST" action="form.php">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Your name" required>
                 <label for="email">Email</label>
@@ -174,8 +174,14 @@
                 <label for="message">Message</label>
                 <textarea type="text" id="message" placeholder="Your Meassage" required></textarea>
 
-                <a href="#" class="submit">Submit</a>
+                <button href="#" class="submit">Submit</button>
             </form>
+        </div>
+    </div>
+
+    <div class="sent hide">
+        <div class="send_message">
+            Thanks. Your message has been sent.
         </div>
     </div>
 
