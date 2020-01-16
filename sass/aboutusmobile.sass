@@ -1,15 +1,4 @@
-$blueOne: #1F3F68
-$blueTwo: #316099
-$blueThree: #356EAD
-$blueFour: #5A98D0
-$blueFive: #98C3E8
-$white: #ffffff
-$ls: 0.04em
-
-@import '../sass/aboutusmobile.sass'
-@import '../sass/aboutusdesctop.sass'
-
-@media (min-width: 1200px)
+@media (max-width: 767.9px)
     *
         margin: 0
         padding: 0
@@ -17,9 +6,10 @@ $ls: 0.04em
 
     body
         position: relative
+        overflow-x: hidden
 
     .content
-        width: 940px
+        width: 90%
         margin: 0 auto
 
     a
@@ -28,12 +18,12 @@ $ls: 0.04em
 
 
     .menu_content
-        width: 1140px
+        width: 80%
         margin: 0 auto
         margin-top: 48px
         display: flex
         justify-content: space-between
-        margin-bottom: 50px
+        margin-bottom: 30px
 
     .logo
         position: relative
@@ -100,23 +90,26 @@ $ls: 0.04em
         color: $white
         letter-spacing: $ls
         margin-bottom: 40px
+        text-align: center
 
     .contact_us_description
         font-size: 20px
         line-height: 30px
         letter-spacing: $ls
         color: rgba(255, 255, 255, 0.6)
-        width: 780px
         text-align: center
 
     .contacts_form
 
         .content
             display: flex
+            flex-direction: column
 
     .contact_addres
         display: flex
-        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
 
     .info_blocks
         margin-top: 45px
@@ -141,10 +134,9 @@ $ls: 0.04em
             margin-right: 19px
 
     .form
-        padding: 56px
+        padding: 30px
         box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
         border-radius: 10px
-        margin-left: 88px
         margin-bottom: 96px
 
     .message
@@ -152,19 +144,19 @@ $ls: 0.04em
         font-size: 20px
         letter-spacing: $ls
         color: $blueOne
-        margin-bottom: 48px
+        margin-bottom: 30px
 
     form
         display: flex
         flex-direction: column
 
         input, textarea
-            padding: 21px 0 21px 42px
-            width: 428px
+            padding: 10px 0 10px 10px
+            width: 90%
             opacity: 0.4
             border: 1px solid $blueThree
-            border-radius: 10px
-            margin-bottom: 32px
+            border-radius: 5px
+            margin-bottom: 20px
 
         label
             letter-spacing: $ls
@@ -179,11 +171,12 @@ $ls: 0.04em
             display: flex
             justify-content: center
             align-items: center
-            padding: 23px 185px
+            padding: 15px 7px
+            max-width: 90%
             background-color: $blueFour
             box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
-            border-radius: 10px
-            margin-top: 72px
+            border-radius: 5px
+            margin-top: 40px
 
 
     .map
@@ -204,11 +197,15 @@ $ls: 0.04em
         margin-bottom: 190px
         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
 
+    .team_buttom_class
+        position: relative
+        margin-bottom: 50px
+
     .our_team
         width: 90%
         margin-left: -10%
         background-color: $blueTwo
-        border-radius: 0px 200px 0px 0px
+        border-radius: 0px 100px 0px 0px
         padding-top: 91px
         padding-left: 120%
         transform: translate(-50%)
@@ -216,25 +213,29 @@ $ls: 0.04em
 
     .team_header
         display: flex
+        flex-direction: column
 
     .team_title
         color: $white
         font-size: 36px
         letter-spacing: $ls
         line-height: 46px
-        width: 317px
+        text-align: center
         padding-bottom: 32px
 
     .team_description
         line-height: 26px
-        width: 460px
+        text-align: center
         letter-spacing: $ls
         color: $white
         opacity: 0.6
 
     .team_button
         width: 100%
-        padding: 100px 0 0 150px
+        padding-top: 50px
+        display: flex
+        justify-content: center
+
 
     hr
         position: absolute
@@ -249,6 +250,7 @@ $ls: 0.04em
 
         .content
             display: flex
+            flex-wrap: wrap
 
     .contacts
         margin-right: 112px
@@ -264,11 +266,12 @@ $ls: 0.04em
         font-size: 28px
         line-height: 46px
         letter-spacing: 0.02em
+        margin-bottom: 30px
 
     .contact_main
         display: flex
         align-items: center
-        margin-bottom: 24px
+        margin-bottom: 10px
 
     .list
         line-height: 26px
@@ -279,19 +282,19 @@ $ls: 0.04em
         letter-spacing: $ls
 
     .copyright
-        margin-top: 64px
+        margin-top: 20px
         color: $white
         opacity: 0.4
         letter-spacing: $ls
-        margin-bottom: 64px
+        margin-bottom: 30px
 
     .about_us
-        margin-right: 77px
+        margin-right: 20px
 
     .footer_menu
         display: flex
         flex-direction: column
-        margin-top: 30px
+        margin-top: 10px
 
         a
             letter-spacing: $ls
