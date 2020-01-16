@@ -65,15 +65,14 @@
             </div>
             <div class="form">
                 <div class="message">Send us message</div>
-                <form action="#">
+                <form name="test" method="get" action="api.php">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Your name">
+                    <input type="text" name="title" value="" placeholder="Your name" required>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your email">
+                    <input type="text" name="text" value="" id="email" placeholder="Your email" required>
                     <label for="message">Message</label>
-                    <textarea type="text" id="message" placeholder="Your Meassage"></textarea>
-
-                    <a href="#">Submit</a>
+                    <input type="text" name="cat" value="" placeholder="Your Meassage" required>
+                    <input type="submit" name="send" value="Submit" class="submit">
                 </form>
             </div>
         </div>
@@ -146,16 +145,17 @@
 
     <div class="modal_form hide">
         <div class="form">
+            <div class="close-modal"><i class="fas fa-times"></i></div>
             <div class="message">Send us message</div>
             <form action="#">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="name" placeholder="Your name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email">
+                <input type="email" id="email" placeholder="Your email" required>
                 <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Your Meassage"></textarea>
+                <textarea type="text" id="message" placeholder="Your Meassage" required></textarea>
 
-                <a href="#">Submit</a>
+                <a href="#" class="submit">Submit</a>
             </form>
         </div>
     </div>

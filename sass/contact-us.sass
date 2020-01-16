@@ -175,15 +175,16 @@ $ls: 0.04em
         textarea
             height: 144px
 
-        a
-            display: flex
-            justify-content: center
-            align-items: center
-            padding: 23px 185px
-            background-color: $blueFour
-            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        .submit
+            padding: 21px 0 21px 0
+            width: 475px
+            border: 1px solid $blueThree
             border-radius: 10px
+            background-color: $blueFour
             margin-top: 72px
+            color: $white
+            opacity: 1
+            font-size: 16px
 
 
     .map
@@ -343,6 +344,7 @@ $ls: 0.04em
             background-color: $white
             padding: 40px
             border-radius: 10px
+            position: relative
 
         .message
             text-transform: uppercase
@@ -374,12 +376,22 @@ $ls: 0.04em
             display: flex
             justify-content: center
             align-items: center
-            padding: 23px 185px
+            padding: 15px 185px
             background-color: $blueFour
             box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
             border-radius: 10px
             margin-top: 40px
             width: 100px
+
+    .close-modal
+        font-size: 40px
+        position: absolute
+        top: 5px
+        right: 25px
+        color: black
+        cursor: pointer
+        height: 20px
+        width: 20px
 
     .hide
         display: none

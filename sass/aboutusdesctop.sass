@@ -167,16 +167,18 @@
         textarea
             height: 144px
 
-        a
-            display: flex
-            justify-content: center
-            align-items: center
-            padding: 15px 7px
-            max-width: 90%
+        .submit
+            padding: 15px 0 15px 0
+            width: 475px
+            border: 1px solid $blueThree
+            border-radius: 10px
             background-color: $blueFour
-            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
-            border-radius: 5px
-            margin-top: 40px
+            color: $white
+            opacity: 1
+            font-size: 16px
+            margin: 0 auto
+            margin-top: 50px
+
 
 
     .map
@@ -346,6 +348,7 @@
             background-color: $white
             padding: 40px
             border-radius: 10px
+            position: relative
 
         .message
             text-transform: uppercase
@@ -383,6 +386,16 @@
             border-radius: 5px
             margin-top: 40px
             width: 300px
+
+    .close-modal
+        font-size: 30px
+        position: absolute
+        top: 5px
+        right: 20px
+        color: black
+        cursor: pointer
+        height: 20px
+        width: 20px
 
     .hide
         display: none
