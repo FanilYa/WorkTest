@@ -67,9 +67,9 @@
                 <div class="message">Send us message</div>
                 <form name="test" method="post" action="form.php">
                     <label for="name">Full Name</label>
-                    <input type="text" name="title" value="" placeholder="Your name" required>
+                    <input type="text" name="title" value="" placeholder="Your name" minlength="2" maxlength="15" required>
                     <label for="email">Email</label>
-                    <input type="text" name="text" value="" id="email" placeholder="Your email" required>
+                    <input type="email" name="text" value="" id="email" placeholder="Your email" pattern="^\S+@\S+\.\S+$" required>
                     <label for="message">Message</label>
                     <textarea type="text" name="cat" value="" placeholder="Your Meassage" required></textarea>
                     <input type="submit" name="send" value="Submit" class="submit">
@@ -152,7 +152,7 @@
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Your name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email" required>
+                <input type="email" id="email" placeholder="Your email" pattern="^\S+@\S+\.\S+$" required>
                 <label for="message">Message</label>
                 <textarea type="text" id="message" placeholder="Your Meassage" required></textarea>
                 <input type="reset" class="reset-input" id="reset">
