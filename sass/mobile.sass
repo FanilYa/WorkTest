@@ -47,6 +47,7 @@
     .header_content
         display: flex
         padding-bottom: 150px
+        position: relative
 
     .header_title
         display: flex
@@ -90,7 +91,9 @@
         position: relative
 
     .header_images
-        margin-left: -80px
+        position: absolute  
+        top: 100px
+        left: 90%
 
 
     .help
@@ -352,7 +355,7 @@
             font-size: 20px
             letter-spacing: $ls
             color: $blueOne
-            margin-bottom: 20px
+            margin-bottom: 10px
 
         form
             display: flex
@@ -360,18 +363,20 @@
 
         input, textarea
             padding: 10px 0 10px 21px
-            width: 230px
+            width: 93%
+            min-width: 180px
+            max-width: 350px
             border: 1px solid $blueThree
             border-radius: 5px
-            margin-bottom: 10px
+            margin-bottom: 5px
 
         label
             letter-spacing: $ls
             color: $blueOne
-            margin-bottom: 10px
+            margin-bottom: 2px
 
         textarea
-            height: 100px
+            height: 40px
 
         a
             display: flex
@@ -408,6 +413,7 @@
         justify-content: center
         align-items: center
         padding-top: 50px
+        overflow: auto
 
     .send_message
         height: 200px
@@ -418,6 +424,7 @@
         align-items: center
         color: green
         border-radius: 20px
+        overflow: auto
 
     .submit
         padding: 10px 0 10px 0
