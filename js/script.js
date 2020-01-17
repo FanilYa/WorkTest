@@ -47,6 +47,39 @@ $(document).ready(function() {
 
     });
 
+    $(document).keyup(function(event){
+
+        if (event.keyCode == 27) {
+
+            modalWindow.addClass('hide');
+
+            showModal.addClass('hide');
+
+            $('html').css('overflow', 'auto');
+        }
+    });
+
+    $(window).on("navigate", function (data) {
+
+        var direction = data.state.direction;
+
+        if (direction == 'back') {
+
+            modalWindow.addClass('hide');
+
+            showModal.addClass('hide');
+
+            $('html').css('overflow', 'auto');
+          
+        }
+        if (direction == 'forward') {
+
+          return false
+          
+        }
+
+      });
+
     $('form').submit(function(e) {
 
         e.preventDefault();
