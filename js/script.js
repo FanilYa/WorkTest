@@ -55,14 +55,25 @@ $(document).ready(function() {
             url: '/form.php',
             dataType: 'html',
             success: function() {
+
                 sent.removeClass('hide');
+
+                showModal.addClass('hide');
+
+                $('#reset').trigger('click');
+
                 $('html').css('overflow', 'hidden');
-                $('body').click(function() {
+
+                setTimeout(function() {
+
                     sent.addClass('hide');
-                    $('html').css('overflow', '');
-                    showModal.addClass('hide');
-                })
+
+                    $('html').css('overflow', 'auto');
+
+                },3000);
+
             }
+            
           });
 
     });
